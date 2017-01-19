@@ -1,0 +1,141 @@
+body {
+	background-image: url("/Scripts/toma-bg-1.png"); 
+}
+
+button {
+	background-color: #F4F0F0; 
+	opacity: 0.85; 
+	width: 11.7%; 
+	margin-top: 10px; 
+	margin-bottom: 5px; 
+	padding: 10px !important;
+	text-align: center !important; 
+	font-weight: bold !important;
+}
+
+input[class=box]
+{
+	/* Double-sized checkboxes */
+	-ms-transform: scale(2.5); /* IE */
+	-moz-transform: scale(2.5); /* FF */
+	-webkit-transform: scale(2.5); /* Safari and Chrome */
+	opacity: 0.85; 
+	margin: 30px; 
+}
+
+input[class=todo-boxes] {
+	position: absolute; 
+	margin-right: 20px; 
+	-moz-transform: scale(1.5);
+}
+
+li {
+	color: #77777B; 
+	background-color: #F4F0F0; 
+	border-radius: 4px; 
+}
+
+textarea {
+	opacity: .8; 
+}
+
+.todo-areas {
+	margin-left: 30px;
+	margin-bottom: 40px; 
+}
+
+#branch-1 {
+	position: absolute; 
+	bottom: 0; 
+	left: 15px; 
+	margin-top: -100px; 
+	/*margin-bottom: -100px; */
+	z-index: -1; 
+}
+
+#branch-pic {
+	max-width: 550px; 
+	margin-left: 50px; 
+	-ms-transform: scale(1.25); /* IE */
+	-moz-transform: scale(1.25); /* FF */
+	-webkit-transform: scale(1.25); /* Safari and Chrome */
+}
+
+#btn-container {
+	margin-top: 15px; 
+}
+
+#check-boxes {
+	display: inline-block;
+	padding: 10px; 
+	margin-left: 22px; 
+}
+
+#count-label {
+	background: #F4F0F0; 
+	display: inline-block;
+	opacity: 0.9; 
+	font-size: 2em; 
+	padding-left: 2%; 
+	padding-right: 2%; 
+	border-radius: 2px; 
+}
+
+#home-tab-div {
+	display: inline-block; 
+	margin-left: 15px; 
+	margin-top: 3px; 
+}
+
+#logo {
+	margin-left: 25px; 
+	max-width: 50px; 
+	max-height: 50px; 
+	margin-top: -15px;
+}
+
+#outer-box {
+	display: inline-block; 
+}
+
+#start-div {
+	margin-left: 25px; 
+	margin-top: 5px;  
+}
+
+#timer-box {
+	background-color: #F4F0F0; 
+	max-width: 25%; 
+	margin-top: 5% !important; 
+	text-align: center; 
+	border-radius: 4px; 
+}
+
+#todo-txt {
+	margin-top: 25px; 
+	margin-bottom: 25px; 
+}
+
+#tom-logo-2 {
+	position: absolute; 
+	right: -130px; 
+	top: -100px; 
+	z-index: 1; 
+	-ms-transform: scale(.7); /* IE */
+	-moz-transform: scale(.7); /* FF */
+	-webkit-transform: scale(.7); /* Safari and Chrome */ 
+}
+
+#top-nav {
+	padding-top: 1%; 
+	padding-bottom: 1%; 
+}
+
+#victory-message {
+	background-color: #F4F0F0; 
+	max-width: 30%; 
+	padding: 10px; 
+	text-align: center; 
+	border-radius: 4px; 
+	opacity: .85;
+}

@@ -1,0 +1,86 @@
+@{
+	ViewData["Title"] = "";
+}
+
+<!--Goes to: _Layout render body-->
+<nav id="top-nav" class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand">
+				<img id="logo" alt="Brand" src="~/Scripts/toma-logo.png" /></a>
+			<a class="navbar-brand">tomatimr</a>
+		</div>
+			<!-- Nav tabs -->
+			<div id="home-tab-div">
+				<ul id="main-tabs" class="nav nav-pills" role="tablist">
+					<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="pill">Home</a></li>
+					<li role="presentation"><a href="#todos" aria-controls="todos" role="tab" data-toggle="pill">To Do's</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<img id="tom-logo-2"src="~/Scripts/tomato-branch-final.png">
+
+<div>
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div role="tabpanel" class="tab-pane active" id="home">
+			<div class="col-md-5"></div>
+			<div id="timer-box" class="container">
+				<h1 id="timer-text"></h1>
+			</div>
+			<div id="btn-container" class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<button type="button" class="btn btn-default" onclick="mainTimer.reset(1500)"> new sesh</button>
+					<button type="button" class="btn btn-default" onclick="mainTimer.reset(300)">break</button>
+					<button type="button" class="btn btn-default" onclick="mainTimer.reset(600)"> long break</button>
+					<button type="button" class="btn btn-default" onclick="mainTimer.start()">start</button>
+					<button type="button" class="btn btn-default" onclick="mainTimer.pause()">pause</button>
+				</div>
+				<br>
+			</div>
+			<div id="branch-1">
+				<img id="branch-pic" src="~/Scripts/branch-final.png">
+			</div>
+
+			<div id="check-box-div" class="container">
+				<div class="col-md-1"></div>
+				<label id="count-label" for="check-boxes">sesh count</label>
+				<div class="col-md-1"></div>
+				
+				<div id="outer-box">
+					<div id="check-boxes">
+						<input class="box" type="checkbox">
+						<input class="box" type="checkbox">
+						<input class="box" type="checkbox">
+						<input id="last-box" class="box" type="checkbox" onclick="mainTimer.longBreakTime()">
+					</div>
+				</div>
+			</div>
+			<div id="victory-message" class="container" style="display:none;">
+				<h3>Time for a long break!</h3>
+			</div>
+		</div>
+		
+		<div role="tabpanel" class="tab-pane" id="todos">
+			<!---->
+			<div id="todo-txt" class="container">
+				<h4>Jot down a couple of to-do's. They'll be in this tab until the browser is closed.</h4>
+			</div>
+			
+			<div class="container">
+				@for (int i = 0; i < 4; i++) {
+					<div id="todo-div"> 
+						<input class="todo-boxes" type="checkbox">
+						<textarea class="todo-areas" rows="2" cols="75"></textarea>
+					</div>
+				}
+			</div>
+		</div>
+	
+	</div>
+</div>
+
