@@ -46,7 +46,7 @@ textarea {
 
 #branch-1 {
 	position: absolute; 
-	bottom: 0; 
+	bottom: -4%; 
 	left: 15px; 
 	margin-top: -100px; 
 	/*margin-bottom: -100px; */
@@ -54,11 +54,10 @@ textarea {
 }
 
 #branch-pic {
-	max-width: 550px; 
-	margin-left: 50px; 
-	-ms-transform: scale(1.25); /* IE */
-	-moz-transform: scale(1.25); /* FF */
-	-webkit-transform: scale(1.25); /* Safari and Chrome */
+	margin-left: -8%; 
+	/*-ms-transform: scale(1.25); /* IE */
+	/*-moz-transform: scale(1.25); /* FF */
+	/*-webkit-transform: scale(1.25); /* Safari and Chrome */
 }
 
 #btn-container {
@@ -118,12 +117,9 @@ textarea {
 
 #tom-logo-2 {
 	position: absolute; 
-	right: -130px; 
-	top: -100px; 
+	right: 0px; 
+	top: -8%; 
 	z-index: 1; 
-	-ms-transform: scale(.7); /* IE */
-	-moz-transform: scale(.7); /* FF */
-	-webkit-transform: scale(.7); /* Safari and Chrome */ 
 }
 
 #top-nav {
